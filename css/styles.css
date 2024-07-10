@@ -1,0 +1,236 @@
+/* styles.css */
+
+/* Paleta de colores */
+:root {
+    --color-akai: #E60012;
+    --color-aomidori: #00A3AF;
+    --color-kin: #FFD700;
+    --color-kuro: #0D0D0D;
+}
+
+/* Importar tipografías */
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-bg-image {
+    background-image: url('path/to/image.jpg'); /* Sustituir con la ruta de la imagen */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-title {
+    padding-top: 200px; /* Ajustar según sea necesario */
+}
+
+.hero-title h1 {
+    color: var(--color-akai);
+    font-family: 'Michroma', sans-serif;
+    margin: 20px 0;
+}
+
+.hero-cta {
+    margin-top: 20px;
+}
+
+.hero-cta button {
+    background-color: var(--color-aomidori);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Navegación principal */
+.main-nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+}
+
+/* Sobre Nosotros Section */
+#sobre-nosotros {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--color-aomidori);
+}
+
+.sobre-nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nosotros-text {
+    flex: 1;
+    padding: 20px;
+}
+
+#sobre-nosotros h2 {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+}
+
+.sobre-nosotros-text p {
+    color: white;
+}
+
+.sobre-nosotros-img {
+    flex: 1;
+    padding: 20px;
+}
+
+.sobre-nosotros-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Servicios Section */
+#servicios {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+#kanagawaCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#servicios h2 {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+}
+
+.servicios-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicio-card {
+    background-color: var(--color-kuro);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 18%;
+}
+
+/* CTA Final Section */
+#cta-final {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--color-akai);
+}
+
+#cta-final h2 {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+}
+
+.cta-final-form input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.cta-final-form button {
+    background-color: var(--color-aomidori);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+#footer {
+    background-color: var(--color-kuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: var(--color-kin);
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+}
+
+.footer-contact p, .footer-newsletter form {
+    margin: 10px 0;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer-newsletter button {
+    background-color: var(--color-aomidori);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-social a {
+    color: var(--color-kin);
+    margin: 0 10px;
+    text-decoration: none;
+    display: block;
+}
